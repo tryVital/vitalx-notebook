@@ -7,6 +7,9 @@ authors = [""]
 [tool.poetry.dependencies]
 python = "^3.11"
 vitalx-aggregation = "^0.0"
+polars = "^1.7"
+ipykernel = "^6.29.5"
+matplotlib = "^3.9.2"
 
 [tool.poetry.group.dev.dependencies]
 vitalx-cli = "^0.0"
