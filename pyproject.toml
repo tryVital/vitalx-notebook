@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "vitalx-notebook"
+version = "0.0.1"
+description = ""
+authors = [""]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+vitalx-aggregation = "^0.0"
+
+[tool.poetry.group.dev.dependencies]
+vitalx-cli = "^0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
