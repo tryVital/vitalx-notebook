@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "vitalx-notebook"
-version = "0.0.1"
+version = "0.1.1"
 description = ""
-authors = [""]
+authors = ["Vital <help@tryvital.com>"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
