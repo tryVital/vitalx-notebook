@@ -450,14 +450,14 @@ tests = ["asttokens (>=2.1.0)", "coverage", "coverage-enable-subprocess", "ipyth
 
 [[package]]
 name = "filelock"
-version = "3.32.7"
+version = "4.2.4"
 description = "A platform independent file lock."
 optional = false
-python-versions = ">=3.10"
+python-versions = ">=3.11"
 groups = ["dev"]
 files = [
-    {file = "filelock-3.32.7-py3-none-any.whl", hash = "sha256:65ff0d0190ea42038b32bda4b77834fb05be2cad4c5b9b01aa4dfb3614536e52"},
-    {file = "filelock-3.32.7.tar.gz", hash = "sha256:37b8a3d9811b0f9aef7e5ec5c71bb320de52df51e6ca9bcd6f5ad81187660da7"},
+    {file = "filelock-4.2.4-py3-none-any.whl", hash = "sha256:301241438c57936ef93f4243a94f2559022268bfcf9b375a9a72eb0f8db8358e"},
+    {file = "filelock-4.2.4.tar.gz", hash = "sha256:c6d8663535e1650ee430507b4ffbac7b464dd64b7647ea0112a9f406499d163d"},
 ]
 
 [[package]]
@@ -1835,67 +1835,67 @@ zstd = ["backports-zstd (>=1.0.0) ; python_version < \"3.14\""]
 
 [[package]]
 name = "vitalx-aggregation"
-version = "0.1.1"
-description = "Vital Horizon AI Aggregation API"
+version = "0.3.1"
+description = "Junction Sense Aggregation API"
 optional = false
-python-versions = "<4.0,>=3.11"
+python-versions = ">=3.11"
 groups = ["main"]
 files = [
-    {file = "vitalx_aggregation-0.1.1-py3-none-any.whl", hash = "sha256:cc6097d2db5ba374022dcb530ca45202de9003ca2ae44cdd788dd9458b830a5d"},
-    {file = "vitalx_aggregation-0.1.1.tar.gz", hash = "sha256:b538b5328349f7cf829d5caacf157a21c56944f727720e34d6d1f5d378fb635e"},
+    {file = "vitalx_aggregation-0.3.1-py3-none-any.whl", hash = "sha256:ff3a8502f42b0bf23398f010f1be17277a488ffc0a1f9a261ce35a608d549e0f"},
+    {file = "vitalx_aggregation-0.3.1.tar.gz", hash = "sha256:37ca4f9943ae151ae970328d9430d626a47170de2e94f15781503ec56e81803b"},
 ]
 
 [package.dependencies]
 polars = ">=1.5,<2.0"
 pydantic = ">=2.0,<3.0"
 requests = ">=2.32,<3.0"
-vitalx-types = ">=0.1,<0.2"
+vitalx-types = "<1.0"
 
 [package.extras]
-cli-auth = ["vitalx-cli-auth (>=0.1,<0.2)"]
+cli-auth = ["vitalx-cli-auth (<1.0)"]
 
 [[package]]
 name = "vitalx-cli"
-version = "0.1.1"
+version = "0.3.0"
 description = "Vital Horizon AI command line tools"
 optional = false
 python-versions = "<4.0,>=3.11"
 groups = ["dev"]
 files = [
-    {file = "vitalx_cli-0.1.1-py3-none-any.whl", hash = "sha256:e3326d42e8f58e36d35081bdbccd8c3a0dc7e8ca255f80da31eca9dd93764063"},
-    {file = "vitalx_cli-0.1.1.tar.gz", hash = "sha256:c0d0c67df8aedf71b1131c22db13c8ef6dd3ddb0e2f8a68dd1ef99b36fb82218"},
+    {file = "vitalx_cli-0.3.0-py3-none-any.whl", hash = "sha256:1835d9476270ca5fc63baa255d73f043018b023faa9512bfaf8d23465493da43"},
+    {file = "vitalx_cli-0.3.0.tar.gz", hash = "sha256:3128f28839c8642af67f5f1e144db95770e0f4566df9e56d98e0e7f208a5bcfb"},
 ]
 
 [package.dependencies]
 typer = ">=0.12.5,<0.13.0"
-vitalx-cli-auth = ">=0.1,<0.2"
+vitalx-cli-auth = "<1.0"
 
 [[package]]
 name = "vitalx-cli-auth"
-version = "0.1.1"
-description = "Vital Horizon AI CLI authentication support package"
+version = "0.3.1"
+description = "Junction Sense CLI authentication support package"
 optional = false
-python-versions = "<4.0,>=3.11"
+python-versions = ">=3.11"
 groups = ["dev"]
 files = [
-    {file = "vitalx_cli_auth-0.1.1-py3-none-any.whl", hash = "sha256:54f1a95dfc1fd9fce85b1dbb41e2ad8152e78298be7480b28ab333f287a421ad"},
-    {file = "vitalx_cli_auth-0.1.1.tar.gz", hash = "sha256:bb7f6f0834f5c0e0227cc074e888a94f3c798d7afdd45ce7dfa903783a70eb38"},
+    {file = "vitalx_cli_auth-0.3.1-py3-none-any.whl", hash = "sha256:af2bfe7006f9c474ba1357a9bae3b0c40501ecd5ee36ede2397a74d4ab2c25a9"},
+    {file = "vitalx_cli_auth-0.3.1.tar.gz", hash = "sha256:1edcf709580113541146b3e897bb52c12cc4ea2f15686a1b54db63719eec7e6e"},
 ]
 
 [package.dependencies]
-filelock = ">=3.15,<4.0"
+filelock = ">=4.2,<4.3"
 requests = ">=2.32,<3.0"
 
 [[package]]
 name = "vitalx-types"
-version = "0.1.1"
-description = "Vital Horizon AI common types package"
+version = "0.3.1"
+description = "Junction Sense common types package"
 optional = false
-python-versions = "<4.0,>=3.11"
+python-versions = ">=3.11"
 groups = ["main"]
 files = [
-    {file = "vitalx_types-0.1.1-py3-none-any.whl", hash = "sha256:e5829d2f54ee277bd2ef7ede3cfdf0c51f53ad4bd66dca7291b6710f139e3d97"},
-    {file = "vitalx_types-0.1.1.tar.gz", hash = "sha256:ebdcb4e286b1a62bcc5d62d4b7449615e156f6a2e9b4db26686a5bbb9bce56a8"},
+    {file = "vitalx_types-0.3.1-py3-none-any.whl", hash = "sha256:acf4605e7c7d8d01e75093e93a9e44a87a9f2f5656785552b2df9282cea62be8"},
+    {file = "vitalx_types-0.3.1.tar.gz", hash = "sha256:dd87da42f6674e16cdefea15d71a92ced58914b3011342a316f633ceb95e4838"},
 ]
 
 [[package]]
@@ -1913,4 +1913,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.11"
-content-hash = "f9b7d827a33af04357e712f535c78fb8a2fe87c1a84cc468cfdb39d0a4226c8c"
+content-hash = "54bcfc367657ab9602e14fabea5cd3b0096f610ef690e5bd05a7fd9ddedbf4c7"
